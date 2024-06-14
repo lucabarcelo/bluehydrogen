@@ -48,7 +48,7 @@ def create_layout(app: Dash, data: pd.DataFrame) -> html.Div:
     # bulk function to be sent as html.Div() with everything layed out
     bulk = html.Div([
         html.H1(app.title, className="hr", style={'text-align':'center','margin-top':'20px'}),
-        html.H6("Developed by Luca Barcelo, Jeffrey Chen, & Stephanie Sanchez", style={'text-align':'center','font-size':'16px','margin-top':'7px'}),
+        html.H6("Developed by Luca Barcelo", style={'text-align':'center','font-size':'16px','margin-top':'7px'}),
         html.H6("Columbia Engineering - Earth & Environmental Engineering", style={'text-align':'center','font-size':'14px','margin-top':'3px'}),
         html.Hr(style={'width':'75%', 'margin-left':'350px'}),
         html.Br(),
