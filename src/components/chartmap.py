@@ -8,7 +8,7 @@ from . import ids
 
 
 def render(app: Dash, data: pd.DataFrame) -> html.Div:
-    px.set_mapbox_access_token('pk.eyJ1IjoiY3VscDNyIiwiYSI6ImNsaDZrbmg5YzAzMnMzbWxwZm9mc2RreG4ifQ.D4kikmeAEAQJ6s0URBfLQQ')
+    px.set_mapbox_access_token('[INSERT TOKEN HERE]')
     cleaned = data[data[DataSchema.IEA].notna()]
 
     fig = px.scatter_mapbox(cleaned, lat=cleaned['Lat'], lon=cleaned['Long'],
